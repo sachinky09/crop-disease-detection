@@ -1,0 +1,253 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.landing-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/potatoes-harvested-sunset-organic-farming-background_641503-164668.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    /* Default text color */
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0;
+    color: #e0f2f1;
+    /* Light teal for heading text */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #b2dfdb;
+    /* Lighter teal for paragraph text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Lora', serif;
+}
+
+.scroll-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #004d40;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #00332a;
+    transform: scale(1.05);
+}
+
+.upload-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.upload-section h2 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.upload-section p {
+    font-size: 1.3em;
+    color: #004d40;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+}
+
+.upload-area {
+    border: 2px dashed #00796b;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upload-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.upload-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.upload-area p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #004d40;
+    font-family: 'Lora', serif;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.file-info {
+    margin-top: 20px;
+}
+
+.file-info h2 {
+    font-size: 2em;
+    color: #004d40;
+    font-family: 'Oswald', sans-serif;
+}
+
+.file-info p {
+    font-size: 1.5em;
+    color: #00796b;
+    font-family: 'Lora', serif;
+}
+
+.why-use-our-predictor {
+    padding: 40px 10px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-align: center;
+}
+
+.why-use-our-predictor h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.why-us-item {
+    background: #ffffff;
+    color: #004d40;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.why-us-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.why-us-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.why-us-item p {
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
+}
+
+.footer {
+    background-color: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
